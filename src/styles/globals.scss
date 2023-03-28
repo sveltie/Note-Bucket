@@ -1,0 +1,33 @@
+@import "node_modules/nord/src/sass/nord.scss";
+
+:root {
+    visibility: visible !important;
+}
+
+html,
+body {
+    margin: 0;
+}
+
+html,
+body,
+#root,
+#root > div {
+    position: absolute;
+    width: 100% !important;
+    height: 100% !important;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+p {
+    margin: 0;
+}
+
+textarea {
+    resize: none;
+    font-family: "Inter", sans-serif;
+    color: $nord3;
+}

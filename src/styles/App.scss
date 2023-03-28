@@ -1,0 +1,273 @@
+@import "node_modules/nord/src/sass/nord.scss";
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #ffffff;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: $nord4;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: $nord3;
+}
+
+.App {
+    font-family: "Inter", sans-serif;
+}
+
+.light {
+    color: $nord3;
+}
+
+.hover-none:hover {
+    background-color: unset;
+}
+
+.flex-end {
+    margin-left: auto;
+    color: $nord14;
+}
+
+.ico-small {
+    font-size: 0.8rem;
+}
+
+.icon-medium {
+    font-size: 1.25rem;
+}
+
+.alert-blue {
+    background-color: $nord10;
+}
+
+.alert-red {
+    background-color: $nord11;
+}
+
+.sidebar {
+    user-select: none;
+    cursor: pointer;
+    box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px,
+        rgba(17, 17, 26, 0.1) 0px 0px 8px;
+    transition: 0.2s ease-in-out;
+
+    .selected {
+        background-color: $nord4;
+    }
+
+    .selected-note {
+        background-color: $nord6;
+    }
+
+    .sidebar-item:hover {
+        background-color: $nord5;
+        transition: 0.2s ease-in-out;
+    }
+
+    .accordion-button {
+        color: $nord3;
+        font-family: "Inter", sans-serif;
+        cursor: pointer;
+    }
+
+    .status {
+        align-items: center;
+        font-weight: 500;
+    }
+
+    .status-important {
+        color: $nord11;
+    }
+
+    .status-on-going {
+        color: $nord14;
+    }
+
+    .status-unfinished {
+        color: $nord4;
+    }
+
+    .label {
+        margin-top: 7px;
+        border-radius: 100px;
+        font-weight: 500;
+        opacity: 0.8;
+        color: $nord0;
+    }
+
+    .label:hover {
+        opacity: 1;
+    }
+
+    .label-markdown {
+        background-color: $nord8;
+    }
+
+    .label-programming {
+        background-color: $nord13;
+    }
+
+    .label-untitled {
+        background-color: $nord5;
+    }
+
+    .note {
+        border-bottom: 1px solid $nord4;
+
+        .button-red {
+            background-color: $nord11;
+        }
+    }
+
+    .note:first-child {
+        border-top: 1px solid $nord4;
+    }
+
+    .note:last-child {
+        border-bottom: 1px solid $nord4;
+    }
+
+    .note:hover {
+        background-color: $nord6;
+    }
+
+    .note-label {
+        background-color: $nord8;
+        color: #ffffff;
+        opacity: 0.9;
+        letter-spacing: 0.5px;
+    }
+
+    .menu-list {
+        background-color: $nord8;
+        border-radius: 4px;
+        color: white;
+    }
+}
+
+.editor {
+    .title-icon {
+        color: $nord3;
+    }
+
+    .title-edit {
+        flex: 1;
+        margin: 0;
+        padding: 0;
+        border: 2px solid transparent;
+        font-size: 1rem;
+        padding: 7px;
+        height: 40px;
+        margin-left: 10px;
+        border-radius: 5px;
+        font-weight: 500;
+        opacity: 0.6;
+        transition: 0.3s ease-in-out;
+    }
+
+    .title-edit:hover {
+        border-color: $nord4;
+        opacity: 1;
+        transition: 0.3s ease-in-out;
+    }
+
+    .title-edit:focus {
+        outline: none;
+        opacity: 1;
+        border-color: $nord4;
+        transition: 0.3s ease-in-out;
+    }
+
+    .text-editor {
+        flex: 1;
+        border-radius: 5px;
+        padding: 10px;
+        margin-right: 5px;
+        border: 2px solid $nord4;
+        transition: 0.3s ease-in-out;
+        font-size: 16px;
+        font-weight: 400;
+        font-family: "Roboto Mono", monospace;
+    }
+
+    .text-editor:focus {
+        outline: none;
+        border-color: $nord3;
+        transition: 0.3s ease-in-out;
+    }
+
+    .editor-preview {
+        overflow-wrap: break-word;
+        word-wrap: break-word;
+        word-break: break-all;
+        word-break: break-word;
+        hyphens: auto;
+        border: 2px solid $nord4;
+
+        img {
+            max-width: 100%;
+        }
+
+        blockquote {
+            margin: 15px 0;
+            border-left: 4px solid $nord4;
+            padding-left: 10px;
+        }
+
+        h1 {
+            margin: 0;
+            margin-bottom: 15px;
+        }
+
+        mark {
+            background-color: $nord7;
+        }
+
+        a {
+            text-decoration: none;
+            color: $nord9;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        a::before {
+            content: "🔗 ";
+        }
+
+        ol,
+        ul {
+            padding-left: 25px;
+        }
+
+        table,
+        th,
+        td {
+            border: 1px solid $nord0;
+            padding: 5px;
+        }
+
+        th {
+            border: 1px solid $nord3;
+            text-align: left;
+        }
+
+        table {
+            border-collapse: collapse;
+        }
+    }
+}
+
+.clock {
+    font-size: 0.75rem;
+    margin-left: auto;
+}
